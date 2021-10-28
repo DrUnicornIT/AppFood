@@ -4,10 +4,14 @@ import {
     Text,
     SafeAreaView,
     Touchable,
-    ScrollViewBase
+    ScrollView
 } from "react-native"
 
-import {HeaderTabs, SearchBar, Categories} from '../components';
+import {HeaderTabs, SearchBar, Categories, RestaurantsList} from '../components';
+import { localRestaurants } from '../components/RestaurantsList';
+
+// const YELP_API_KEY = 
+
 const Home = () => {
     return(
         <SafeAreaView 
@@ -25,9 +29,10 @@ const Home = () => {
                 <HeaderTabs/>
                 <SearchBar/>
             </View>
-            <View>
+            <ScrollView showsVerticalScrollIndicator={false}>
                 <Categories/>
-            </View>
+                <RestaurantsList restaurants={localRestaurants}/>
+            </ScrollView>
         </SafeAreaView>
     )
 }
