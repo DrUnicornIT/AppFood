@@ -1,3 +1,4 @@
 import HeaderTabs from './HeaderTabs';
-
-export {HeaderTabs};
+import SearchBar from './SearchBar'
+import Categories from './Categories'
+export {HeaderTabs, SearchBar, Categories};

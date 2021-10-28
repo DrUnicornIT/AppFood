@@ -3,15 +3,31 @@ import {
     View,
     Text,
     SafeAreaView,
-    Touchable
+    Touchable,
+    ScrollViewBase
 } from "react-native"
 
-import {HeaderTabs} from '../components'
-
+import {HeaderTabs, SearchBar, Categories} from '../components';
 const Home = () => {
     return(
-        <SafeAreaView>
-            <HeaderTabs/>
+        <SafeAreaView 
+            style={{
+                backgroundColor: "#eee",
+                flex: 1
+            }}
+        >
+            <View 
+                style={{
+                    backgroundColor: "white",
+                    padding: 15
+                }}
+            >
+                <HeaderTabs/>
+                <SearchBar/>
+            </View>
+            <View>
+                <Categories/>
+            </View>
         </SafeAreaView>
     )
 }
