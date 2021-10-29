@@ -7,8 +7,8 @@ import {
     ScrollView
 } from "react-native"
 
-import {HeaderTabs, SearchBar, Categories, RestaurantsList} from '../components';
-import { localRestaurants } from '../components/RestaurantsList';
+import {HeaderTabs, SearchBar, Categories, RestaurantsList} from '../../components';
+import { localRestaurants } from '../../components/RestaurantsList';
 
 // const YELP_API_KEY = 
 
