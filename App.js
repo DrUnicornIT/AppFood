@@ -4,11 +4,15 @@ import {
   Text
 } from "react-native";
 
-import {Home} from './app/screens';
-
+import {Boarding,Home} from './app/screens';
 const App = () => {
   return(
-    <Home/>
+      <Boarding/>
+      // <View>
+      //   <Text>
+      //     Ok
+      //   </Text>
+      // </View>
   )
 }
 
